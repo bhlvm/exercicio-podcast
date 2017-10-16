@@ -1,9 +1,60 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="br.ufpe.cin.if710.podcast.ui.EpisodeDetailActivity">
+    android:layout_marginLeft="15dp"
+    android:orientation="vertical">
 
-</android.support.constraint.ConstraintLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Descrição Geral:"
+        android:layout_gravity="center"
+        android:textSize="25dp"
+        android:textColor="@color/colorPrimary"
+        android:layout_marginTop="25dp"/>
+
+    <TextView
+        android:id="@+id/title_descricao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Título:"
+        android:textSize="15dp"
+        android:layout_marginTop="35dp"/>
+
+    <TextView
+        android:id="@+id/link_descricao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:textSize="15dp"
+        android:text="Link"/>
+
+    <TextView
+        android:id="@+id/pubDate_descricao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:textSize="15dp"
+        android:text="Data de publicação"/>
+
+    <TextView
+        android:id="@+id/descricao_descricao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:text="Descrição"
+        android:textAlignment="viewStart"
+        android:layout_marginTop="25dp"
+        />
+
+    <TextView
+        android:id="@+id/donwload_link_descricao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:text="Donwload Link"
+        android:textAlignment="viewStart"
+        android:layout_marginTop="25dp"/>
+</LinearLayout>
