@@ -35,7 +35,7 @@ public class PodcastProvider extends ContentProvider {
         // Implemented handle requests to insert a new row.
         Uri inserted = null;
 
-        long id = dbHelper.getWritableDatabase().replace(PodcastDBHelper.DATABASE_TABLE, null, values);
+        long id = dbHelper.getWritableDatabase().insert(PodcastDBHelper.DATABASE_TABLE, null, values);
         inserted = Uri.withAppendedPath(PodcastProviderContract.EPISODE_LIST_URI, Long.toString(id));
 
         return inserted;
