@@ -38,10 +38,10 @@ public class PodcastDBHelper extends SQLiteOpenHelper {
     };
     final private static String CREATE_CMD =
             "CREATE TABLE "+DATABASE_TABLE+" (" + _ID
-                    + " INTEGER PRIMARY KEY AUTOINCREMENT, "
+                    + " INTEGER, "
                     + EPISODE_TITLE + " TEXT NOT NULL, "
                     + EPISODE_DATE + " TEXT NOT NULL, "
-                    + EPISODE_LINK + " TEXT NOT NULL, "
+                    + EPISODE_LINK + " TEXT PRIMARY KEY NOT NULL, "
                     + EPISODE_DESC + " TEXT NOT NULL, "
                     + EPISODE_DOWNLOAD_LINK + " TEXT NOT NULL, "
                     + EPISODE_FILE_URI + " TEXT NOT NULL)";
@@ -57,4 +57,5 @@ public class PodcastDBHelper extends SQLiteOpenHelper {
     public void onUpgrade(SQLiteDatabase sqLiteDatabase, int i, int i1) {
         throw new RuntimeException("inutilizado");
     }
+
 }
