@@ -1,6 +1,7 @@
 package br.ufpe.cin.if710.podcast.domain;
+import java.io.Serializable;
+public class ItemFeed implements Serializable {
 
-public class ItemFeed {
     private final String title;
     private final String link;
     private final String pubDate;
